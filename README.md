@@ -38,7 +38,7 @@ To obtain your `AccessKey`:
 #define MEMORY_BUFFER_SIZE ...
 static uint8_t memory_buffer[MEMORY_BUFFER_SIZE] __attribute__((aligned(16));
 
-static const char* ACCESS_KEY = ...; //AccessKey string obtained from Picovoice Console (https://picovoice.ai/console/)
+static const char* ACCESS_KEY = ...; //AccessKey string obtained from [Picovoice Console](https://picovoice.ai/console/)
 
 const uint8_t keyword_array[] = {...};
 const int32_t keyword_model_sizes = sizeof(keyword_array);

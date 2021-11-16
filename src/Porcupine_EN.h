@@ -20,7 +20,19 @@
 #include "pv_porcupine.h"
 #include "utility/pv_audio_rec.h"
 
+/**
+ * Getter for boards' unique identifier (UUID)
+ *
+ * @return UUID.
+ */
 const uint8_t *pv_get_uuid(void);
+
+
+/**
+ * Getter for the size of the UUID.
+ *
+ * @return size.
+ */
 uint32_t pv_get_uuid_size(void);
 
 #endif // PORCUPINE_EN_H

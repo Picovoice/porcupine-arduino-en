@@ -25,7 +25,7 @@
 
 #else
 
-#error “This library only supports Arduino Nano 33 BLE.”
+#error “Unsupported board.”
 
 #endif
 

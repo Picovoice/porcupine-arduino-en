@@ -1,15 +1,15 @@
 pv_porcupine_t	KEYWORD1
 
-pv_porcupine_init	KEYWORD2
+pv_audio_rec_get_new_buffer	KEYWORD2
 pv_get_uuid	KEYWORD2
 pv_get_uuid_size	KEYWORD2
-pv_audio_rec_get_new_buffer	KEYWORD2
-pv_porcupine_process	KEYWORD2
-pv_status_to_string	KEYWORD2
-pv_sample_rate	KEYWORD2
 pv_porcupine_delete	KEYWORD2
-pv_porcupine_version	KEYWORD2
 pv_porcupine_frame_length	KEYWORD2
+pv_porcupine_init	KEYWORD2
+pv_porcupine_process	KEYWORD2
+pv_porcupine_version	KEYWORD2
+pv_sample_rate	KEYWORD2
+pv_status_to_string	KEYWORD2
 
 PV_STATUS_SUCCESS	LITERAL1
 PV_STATUS_OUT_OF_MEMORY	LITERAL1

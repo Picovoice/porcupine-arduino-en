@@ -55,6 +55,7 @@ void setup() {
         Serial.println(pv_status_to_string(status));
         while (1);
     }
+    Serial.println("The board is listening for 'Porcupine'...");
 }
 
 void loop()

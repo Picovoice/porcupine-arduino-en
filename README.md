@@ -15,6 +15,7 @@ applications. It is
 * [Arduino Portenta H7](https://www.arduino.cc/pro/hardware/product/portenta-h7) + [Portenta Vision Shield](https://www.arduino.cc/pro/hardware/product/portenta-vision-shield)
 * [Arduino Nano 33 BLE Sense](https://docs.arduino.cc/hardware/nano-33-ble)
 
+
 ## Dependency
 
 * LibPrintf
@@ -43,7 +44,7 @@ static const char* ACCESS_KEY = ...; //AccessKey string obtained from [Picovoice
 const uint8_t keyword_array[] = {...};
 const int32_t keyword_model_sizes = sizeof(keyword_array);
 const void *keyword_models = keyword_array;
-const float sensitivity = 0.5f;
+static const float SENSITIVITY = 0.75f;
 
 pv_porcupine_t *handle = NULL;
 ```
@@ -63,7 +64,7 @@ const pv_status_t status = pv_porcupine_init(
         1,
         &keyword_model_sizes,
         &keyword_models,
-        &sensitivity,
+        &SENSITIVITY,
         &handle);
 
 if (status != PV_STATUS_SUCCESS) {

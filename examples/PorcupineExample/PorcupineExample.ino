@@ -1,5 +1,5 @@
 /*
-    Copyright 2021 Picovoice Inc.
+    Copyright 2021-2023 Picovoice Inc.
 
     You may not use this file except in compliance with the license. A copy of the license is located in the "LICENSE"
     file accompanying this source.
@@ -15,7 +15,7 @@
 
 #define MEMORY_BUFFER_SIZE (70 * 1024)
 
-static const char* ACCESS_KEY = ... //AccessKey string obtained from Picovoice Console (https://picovoice.ai/console/)
+static const char* ACCESS_KEY = "${ACCESS_KEY}"; //AccessKey string obtained from Picovoice Console (https://picovoice.ai/console/)
 
 static int8_t memory_buffer[MEMORY_BUFFER_SIZE] __attribute__((aligned(16)));
 
@@ -55,7 +55,7 @@ void setup() {
         Serial.println(pv_status_to_string(status));
         while (1);
     }
-    Serial.println("The board is listening for 'Porcupine'...");
+    Serial.println("The board is listening for 'hey computer'...");
 }
 
 void loop()

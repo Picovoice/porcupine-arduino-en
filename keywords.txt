@@ -10,6 +10,7 @@ pv_porcupine_process	KEYWORD2
 pv_porcupine_version	KEYWORD2
 pv_sample_rate	KEYWORD2
 pv_status_to_string	KEYWORD2
+pv_get_error_stack KEYWORD2
 
 PV_STATUS_SUCCESS	LITERAL1
 PV_STATUS_OUT_OF_MEMORY	LITERAL1

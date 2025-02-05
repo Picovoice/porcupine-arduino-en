@@ -12,7 +12,6 @@ applications. It is
 
 ## Compatibility
 
-- [Arduino Portenta H7](https://www.arduino.cc/pro/hardware/product/portenta-h7) + [Portenta Vision Shield](https://www.arduino.cc/pro/hardware/product/portenta-vision-shield)
 - [Arduino Nano 33 BLE Sense](https://docs.arduino.cc/hardware/nano-33-ble)
 
 ## Dependency
@@ -91,7 +90,7 @@ if (keyword_index != -1) {
 1. Compile and upload the `Porcupine_EN/GetUUID` sketch from the `File -> Examples` menu. Copy the UUID of the board printed at the beginning of the session to the serial monitor.
 2. Go to [Picovoice Console](https://console.picovoice.ai/) to create models for [Porcupine wake word engine](https://picovoice.ai/docs/quick-start/console-porcupine/).
 3. Select `Arm Cortex M` as the platform when training the model.
-4. Select your board type (`Arduino Nano 33 BLE Sense` or `Arduino Portenta H7`) and provide the UUID of the chipset on the board.
+4. Select your board type (`Arduino Nano 33 BLE Sense`) and provide the UUID of the chipset on the board.
 
 The model is now being trained. You will be able to download it within a few hours.
 

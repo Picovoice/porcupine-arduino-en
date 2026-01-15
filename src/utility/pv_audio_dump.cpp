@@ -1,5 +1,5 @@
 /*
-    Copyright 2021 Picovoice Inc.
+    Copyright 2021-2025 Picovoice Inc.
 
     You may not use this file except in compliance with the license. A copy of the license is located in the "LICENSE"
     file accompanying this source.
@@ -13,6 +13,9 @@
 #include <string.h>
 
 #include "LibPrintf.h"
+
+namespace picovoice {
+namespace porcupine {
 
 #define pv_min(a,b) ((a) < (b) ? (a) : (b))
 
@@ -47,3 +50,6 @@ void pv_audio_dump_start(void) {
     }
     pv_audio_dump_reset_buffer();
 }
+
+} // namespace porcupine
+} // namespace picovoice

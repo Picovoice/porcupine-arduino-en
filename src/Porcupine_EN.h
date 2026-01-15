@@ -20,6 +20,9 @@
 #include "pv_porcupine.h"
 #include "utility/pv_audio_rec.h"
 
+namespace picovoice {
+namespace porcupine {
+
 /**
  * Getter for boards' unique identifier (UUID)
  *
@@ -34,5 +37,8 @@ const uint8_t *pv_get_uuid(void);
  * @return size.
  */
 uint32_t pv_get_uuid_size(void);
+
+} // namespace porcupine
+} // namespace picovoice
 
 #endif // PORCUPINE_EN_H

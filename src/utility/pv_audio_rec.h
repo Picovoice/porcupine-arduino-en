@@ -1,5 +1,5 @@
 /*
-    Copyright 2020-2021 Picovoice Inc.
+    Copyright 2020-2025 Picovoice Inc.
 
     You may not use this file except in compliance with the license. A copy of the license is located in the "LICENSE"
     file accompanying this source.
@@ -9,10 +9,13 @@
     specific language governing permissions and limitations under the License.
 */
 
-#ifndef PV_AUDIO_REC_H
-#define PV_AUDIO_REC_H
+#ifndef PV_PORCUPINE_AUDIO_REC_H
+#define PV_PORCUPINE_AUDIO_REC_H
 
 #include "picovoice.h"
+
+namespace picovoice {
+namespace porcupine {
 
 /**
  * Initialize audio recording
@@ -34,5 +37,8 @@ const int16_t *pv_audio_rec_get_new_buffer(void);
  */
 void pv_audio_rec_deinit(void);
 
-#endif // PV_AUDIO_REC_H
+} // namespace porcupine
+} // namespace picovoice
+
+#endif // PV_PORCUPINE_AUDIO_REC_H
 

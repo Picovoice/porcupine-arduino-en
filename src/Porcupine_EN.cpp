@@ -13,6 +13,9 @@
 
 #include "Porcupine_EN.h"
 
+namespace picovoice {
+namespace porcupine {
+
 #if defined(ARDUINO_ARDUINO_NANO33BLE)
 
 #define UUID_ADDRESS (0x10000060)
@@ -31,3 +34,6 @@ const uint8_t *pv_get_uuid(void) {
 uint32_t pv_get_uuid_size(void) {
     return UUID_SIZE;
 }
+
+} // namespace porcupine
+} // namespace picovoice

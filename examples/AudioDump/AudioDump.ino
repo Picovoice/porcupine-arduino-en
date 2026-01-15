@@ -18,14 +18,14 @@ void setup() {
     Serial.begin(9600);
     while (!Serial);
 
-    pv_status_t status = pv_audio_rec_init();
+    pv_status_t status = picovoice::porcupine::pv_audio_rec_init();
     if (status != PV_STATUS_SUCCESS) {
         Serial.print("Audio init failed with ");
         Serial.println(pv_status_to_string(status));
         while (1);
     }
 
-    pv_audio_dump_init();
+    picovoice::porcupine::pv_audio_dump_init();
 
     Serial.println("Send anything to start recording:");
 }
@@ -37,11 +37,11 @@ void loop()
         Serial.println("Recording...");
         bool is_dump_buffer_full = false;
         while (!is_dump_buffer_full) {
-            const int16_t *buffer = pv_audio_rec_get_new_buffer();
+            const int16_t *buffer = picovoice::porcupine::pv_audio_rec_get_new_buffer();
             if (buffer) {
-                is_dump_buffer_full = pv_audio_dump_add(buffer, 512U);
+                is_dump_buffer_full = picovoice::porcupine::pv_audio_dump_add(buffer, 512U);
             }
         }
-        pv_audio_dump_start();
+        picovoice::porcupine::pv_audio_dump_start();
     }
 }

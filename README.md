@@ -73,8 +73,8 @@ if (status != PV_STATUS_SUCCESS) {
 
 Picovoice accepts single channel, 16-bit PCM audio. The sample rate can be retrieved using `pv_sample_rate()`. Picovoice accepts input audio in consecutive chunks (aka frames); the length of each frame can be retrieved using `pv_porcupine_frame_length()`. Inside the `loop()` function in the sketch, pass the recorded audio to the Picovoice engine:
 
-```c
-const int16_t *pcm = pv_audio_rec_get_new_buffer()
+```cpp
+const int16_t *pcm = picovoice::porcupine::pv_audio_rec_get_new_buffer()
 int32_t keyword_index;
 const pv_status_t status = pv_porcupine_process(handle, pcm, &keyword_index);
 if (status != PV_STATUS_SUCCESS) {

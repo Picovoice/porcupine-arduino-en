@@ -1,5 +1,5 @@
 /*
-    Copyright 2021 Picovoice Inc.
+    Copyright 2021-2025 Picovoice Inc.
 
     You may not use this file except in compliance with the license. A copy of the license is located in the "LICENSE"
     file accompanying this source.
@@ -9,12 +9,18 @@
     specific language governing permissions and limitations under the License.
 */
 
-#ifndef PV_AUDIO_DUMP_H
-#define PV_AUDIO_DUMP_H
+#ifndef PV_PORCUPINE_AUDIO_DUMP_H
+#define PV_PORCUPINE_AUDIO_DUMP_H
+
+namespace picovoice {
+namespace porcupine {
 
 void pv_audio_dump_init(void);
 bool pv_audio_dump_add(const int16_t *buffer, uint32_t buffer_size);
 void pv_audio_dump_start(void);
 void pv_audio_dump_reset_buffer(void);
 
-#endif // PV_AUDIO_DUMP_H
+} // namespace porcupine
+} // namespace picovoice
+
+#endif // PV_PORCUPINE_AUDIO_DUMP_H

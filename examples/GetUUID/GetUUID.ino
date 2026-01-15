@@ -15,11 +15,11 @@ void setup() {
     Serial.begin(9600);
     while (!Serial);
 
-    const uint8_t *board_uuid = pv_get_uuid();
+    const uint8_t *board_uuid = picovoice::porcupine::pv_get_uuid();
     Serial.print("UUID: ");
-    const int32_t format_size = pv_get_uuid_size() * 4;
+    const int32_t format_size = picovoice::porcupine::pv_get_uuid_size() * 4;
     char format[format_size];
-    for (uint32_t i = 0; i < pv_get_uuid_size(); i++) {
+    for (uint32_t i = 0; i < picovoice::porcupine::pv_get_uuid_size(); i++) {
         sprintf(format, " %.2x", board_uuid[i]);
         Serial.print(format);
     }

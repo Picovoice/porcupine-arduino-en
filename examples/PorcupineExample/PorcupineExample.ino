@@ -40,7 +40,7 @@ void setup() {
     Serial.begin(9600);
     while (!Serial);
 
-    pv_status_t status = pv_audio_rec_init();
+    pv_status_t status = picovoice::porcupine::pv_audio_rec_init();
     if (status != PV_STATUS_SUCCESS) {
         Serial.print("Audio init failed with ");
         Serial.println(pv_status_to_string(status));
@@ -78,7 +78,7 @@ void setup() {
 }
 
 void loop() {
-    const int16_t *buffer = pv_audio_rec_get_new_buffer();
+    const int16_t *buffer = picovoice::porcupine::pv_audio_rec_get_new_buffer();
     if (buffer) {
         int32_t keyword_index;
         const pv_status_t status = pv_porcupine_process(handle, buffer, &keyword_index);

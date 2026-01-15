@@ -1,5 +1,5 @@
 /*
-    Copyright 2021 Picovoice Inc.
+    Copyright 2021-2025 Picovoice Inc.
 
     You may not use this file except in compliance with the license. A copy of the license is located in the "LICENSE"
     file accompanying this source.
@@ -14,6 +14,9 @@
 
 #include "PDM.h"
 #include "picovoice.h"
+
+namespace picovoice {
+namespace porcupine {
 
 #define PV_AUDIO_REC_AUDIO_FREQUENCY (16000U)
 #define PV_AUDIO_REC_CHANNEL_NUMBER (1)
@@ -83,3 +86,6 @@ const int16_t *pv_audio_rec_get_new_buffer(void) {
 void pv_audio_rec_deinit(void) {
     PDM.end();
 }
+
+} // namespace porcupine
+} // namespace picovoice

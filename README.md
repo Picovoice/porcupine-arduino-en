@@ -22,11 +22,25 @@ applications. It is
 
 The Porcupine SDK requires a valid `AccessKey` at initialization. `AccessKey`s act as your credentials when using Porcupine SDKs.
 You can create your `AccessKey` for free. Make sure to keep your `AccessKey` secret.
+Signup or Login to [Picovoice Console](https://console.picovoice.ai/) to get your `AccessKey`.
 
-To obtain your `AccessKey`:
+## Installation
 
-1. Login or Signup for a free account on the [Picovoice Console](https://picovoice.ai/console/).
-2. Once logged in, go to the [`AccessKey` tab](https://console.picovoice.ai/access_key) to create one or use an existing `AccessKey`.
+1. Install the [Arduino IDE](https://www.arduino.cc/en/software/) for your platform.
+2. With the IDE open, go to `Tools`->`Manage Libraries...`
+3. Search for `Porcupine_EN`, then click `INSTALL`.
+
+This package is intended to be used via the Arduino Library Manager.
+
+## Example
+
+The library comes with an example that can be used as a starting point to quickly get started with the library.
+
+1. Open `File`->`Examples`->`Porcupine_EN`->`PorcupineExample`.
+2. Replace `ACCESS_KEY` in the source with the `AccessKey` obtained from Picovoice Console.
+3. Press `Upload` and check the `Serial Monitor` for outputs.
+
+Additional information can be found in the [Picovoice Docs](https://picovoice.ai/docs/quick-start/porcupine-arduino/).
 
 ## Integration
 
